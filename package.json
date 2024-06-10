@@ -1,0 +1,23 @@
+{
+  "name": "fizzbuzz",
+  "version": "0.0.1",
+  "description": "Practice repo for implementing the classic FizzBuzz challenge with the TDD workflow.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonrevill/fizzbuzz.git"
+  },
+  "keywords": [
+    "tdd",
+    "kata"
+  ],
+  "author": "Simon Revill",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/simonrevill/fizzbuzz/issues"
+  },
+  "homepage": "https://github.com/simonrevill/fizzbuzz#readme"
+}
