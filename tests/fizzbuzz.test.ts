@@ -12,4 +12,10 @@ describe("fizzbuzz tests", () => {
 
     expect(result).toBe("Fizz");
   });
+
+  it('returns string "Buzz" for multiples of five', () => {
+    const result = fizzBuzz(5);
+
+    expect(result).toBe("Buzz");
+  });
 });
