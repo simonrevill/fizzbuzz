@@ -15,10 +15,15 @@ describe("fizzbuzz tests", () => {
     }
   );
 
-  it('returns string "Fizz" for multiples of three', () => {
-    const result = fizzBuzz(3);
+  it.each([
+    [3, "Fizz"],
+    [6, "Fizz"],
+    [9, "Fizz"],
+    [12, "Fizz"],
+  ])('returns string "Fizz" for multiples of three', (number, expected) => {
+    const result = fizzBuzz(number);
 
-    expect(result).toBe("Fizz");
+    expect(result).toBe(expected);
   });
 
   it('returns string "Buzz" for multiples of five', () => {
