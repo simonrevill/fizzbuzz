@@ -1,6 +1,12 @@
 import fizzBuzz from "../src/fizzbuzz";
 
 describe("fizzbuzz tests", () => {
+  it('accepts 0 as input and returns the string "0"', () => {
+    const result = fizzBuzz(0);
+
+    expect(result).toBe("0");
+  });
+
   it.each([
     [1, "1"],
     [2, "2"],
