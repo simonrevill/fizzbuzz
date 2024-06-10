@@ -37,9 +37,17 @@ describe("fizzbuzz tests", () => {
     expect(result).toBe(expected);
   });
 
-  it('returns string "FizzBuzz" for number that is multiple of three and five', () => {
-    const result = fizzBuzz(15);
+  it.each([
+    [15, "FizzBuzz"],
+    [30, "FizzBuzz"],
+    [45, "FizzBuzz"],
+    [90, "FizzBuzz"],
+  ])(
+    'returns string "FizzBuzz" for number that is multiple of three and five',
+    (number, expected) => {
+      const result = fizzBuzz(number);
 
-    expect(result).toBe("FizzBuzz");
-  });
+      expect(result).toBe(expected);
+    }
+  );
 });
