@@ -26,10 +26,15 @@ describe("fizzbuzz tests", () => {
     expect(result).toBe(expected);
   });
 
-  it('returns string "Buzz" for multiples of five', () => {
-    const result = fizzBuzz(5);
+  it.each([
+    [5, "Buzz"],
+    [10, "Buzz"],
+    [20, "Buzz"],
+    [25, "Buzz"],
+  ])('returns string "Buzz" for multiples of five', (number, expected) => {
+    const result = fizzBuzz(number);
 
-    expect(result).toBe("Buzz");
+    expect(result).toBe(expected);
   });
 
   it('returns string "FizzBuzz" for number that is multiple of three and five', () => {
