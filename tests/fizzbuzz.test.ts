@@ -13,7 +13,7 @@ describe("fizzbuzz tests", () => {
     [4, "4"],
     [7, "7"],
   ])(
-    "accepts a number as input and returns it as a string",
+    "accepts a number as input and returns it as a string - %i",
     (number, expected) => {
       const result = fizzBuzz(number);
 
