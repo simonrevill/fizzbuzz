@@ -1,5 +1,9 @@
+import fizzBuzz from "../src/fizzbuzz";
+
 describe("fizzbuzz tests", () => {
-  it("2 + 2 = 4", () => {
-    expect(2 + 2).toBe(4);
+  it("accepts a number as input and returns it as a string", () => {
+    const result = fizzBuzz(0);
+
+    expect(typeof result).toBe("string");
   });
 });
